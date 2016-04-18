@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
   TString reader;
   ifstream fileReader(argv[1]);
 
-  TFile* outputFile = TFile::Open("tight_small_Tree.root", "recreate");
+  TFile* outputFile = TFile::Open("tight_small_Tree1.root", "recreate");
   TTree* redTree = new TTree ("redTree","a small Tree");
    /*------------------------------ this is for the mass---------------------------------------------------------------------------------------------*/
    //Float_t dielectron_mass;
@@ -81,7 +81,7 @@ int main(int argc, char** argv) {
            if ((electronId_WP2012_v3(0, TIGHT) != PassAllWP2012Cuts) || (electronId_WP2012_v3(1, TIGHT) != PassAllWP2012Cuts)) continue;
       /*----------------------------Filling the mass,  Pt  , En  , Eta with tight eletrons-----------------------------------------------------*/
 	   dielectron_mass = (els_p4().at(0)+els_p4().at(1)).mass(); 
-	   //cout << els_p4().at(0).pt()+els_p4().at(1).pt()<< endl;
+	   cout << ((els_p4().at(0)+els_p4().at(1)).mass(),evt_scale1fb())<< endl;
 	   dielectron_pt = els_p4().at(0).pt()+els_p4().at(1).pt();
 	   dielectron_energy = els_p4().at(0).e()+els_p4().at(1).e();
 	   electron_eta[0]=els_p4().at(0).eta();
