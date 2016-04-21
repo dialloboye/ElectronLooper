@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
   TString reader;
   ifstream fileReader(argv[1]);
 
-  TFile* outputFile = TFile::Open("tight_small_Tree.root", "recreate");
+  TFile* outputFile = TFile::Open("ntuple.root", "recreate");
   TTree* redTree = new TTree ("redTree","a small Tree");
    /*------------------------------ this is for the mass---------------------------------------------------------------------------------------------*/
    //Float_t dielectron_mass;
@@ -161,7 +161,7 @@ int main(int argc, char** argv) {
 
   
  
-  set_goodrun_file("DQ/Cert_190456-208686_8TeV_PromptReco_Collisions12_JSON_goodruns.txt");
+ set_goodrun_file("goodruns.txt");
   
   while (!fileReader.eof()) {
 
