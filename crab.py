@@ -19,5 +19,5 @@ config.Data.unitsPerJob = 1
 config.Data.publication = False
 config.Data.outputDatasetTag = 'ElectronLooper_test'
 
-config.Site.storageSite = 'XX_XX_XXXX'
+config.Site.storageSite = '/afs/cern.ch/work/d/diboye/essai/CMSSW_7_6_3/src/ElectronLooper/t2/store/data/boyedata'
 config.Site.whitelist = ['T2_US_*']
