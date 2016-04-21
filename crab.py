@@ -19,5 +19,5 @@ config.Data.unitsPerJob = 1
 config.Data.publication = False
 config.Data.outputDatasetTag = 'ElectronLooper_test'
 
-config.Site.storageSite = 'T2_US_UCSD'
+config.Site.storageSite = 'XX_XX_XXXX'
 config.Site.whitelist = ['T2_US_*']
