@@ -9,7 +9,7 @@ config.General.transferLogs = True
 config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = 'pset.py'
 config.JobType.scriptExe = 'crabWrapper.sh'
-config.JobType.inputFiles = ['FrameworkJobReport.xml','ElectronLooper.exe', 'goodruns.txt', 'mc_small.txt', 'mc.txt', 'data.txt']
+config.JobType.inputFiles = ['mc_small.txt]
 config.JobType.outputFiles = ['ntuple.root']
 
 config.Data.userInputFiles = open('mc_small.txt').readlines()
