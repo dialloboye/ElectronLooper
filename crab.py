@@ -9,7 +9,8 @@ config.General.transferLogs = True
 config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = 'pset.py'
 config.JobType.scriptExe = 'crabWrapper.sh'
-config.JobType.inputFiles = ['mc_small.txt]
+#config.JobType.inputFiles = ['FrameworkJobReport.xml','ElectronLooper.exe', 'goodruns.txt', 'mc_small.txt', 'mc.txt', 'data.txt']
+config.JobType.inputFiles = [ 'mc_small.txt']
 config.JobType.outputFiles = ['ntuple.root']
 
 config.Data.userInputFiles = open('mc_small.txt').readlines()
@@ -19,5 +20,5 @@ config.Data.unitsPerJob = 1
 config.Data.publication = False
 config.Data.outputDatasetTag = 'ElectronLooper_test'
 
-config.Site.storageSite = '/afs/cern.ch/work/d/diboye/essai/CMSSW_7_6_3/src/ElectronLooper/t2/store/data/boyedata'
+config.Site.storageSite = '/afs/cern.ch/work/d/diboye/essai/CMSSW_7_6_3/src/ElectronLooper/'
 config.Site.whitelist = ['T2_US_*']
