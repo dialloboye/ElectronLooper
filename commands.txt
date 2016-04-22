@@ -1,0 +1,8 @@
+to merge the file into one file: 
+hadd wMassReducedTree_22Apr2016/treeMerged.root wMassReducedTree_22Apr2016/run8TeV*.root
+
+to check the status of a job:
+bjobs
+to run  the  jobs:
+1python xAnaBatch.py  -o <outputDir> 
+option -d : dry_run  (job pas lance, cree juste les scripts a soumettre)
